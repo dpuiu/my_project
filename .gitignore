@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+src/__pycache__/
+tests/__pycache__/
