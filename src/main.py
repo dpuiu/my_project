@@ -11,12 +11,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def main():
-    data = np.random.randint(1, 20, size=100)
+    data = np.random.randint(1, 20, size=10)
     result = process_data(data)
-    #print(f"Processed Data: {result}")
-    df=pd.DataFrame(result, columns=['Processed'])
-    plt.plot(df['Processed'])
-    plt.show()
+    
+    df=pd.DataFrame({'Original': data, 'Processed': result})
+    print(df)
+    #plt.plot(df['Processed'])
+    #plt.show()
 
 
 if __name__ == "__main__":
